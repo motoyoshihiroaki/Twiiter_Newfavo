@@ -108,11 +108,9 @@ def main():
     return
 
 if __name__=="__main__":
-    # print("Scheduling ... ")
-    # for i in range(8, 24, 1):
-    #     schedule.every().day.at("{:02d}:19".format(i)).do(main)
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
-    
-    main()
+    print("Scheduling ... ")
+    for i in range(8, 24, 1):
+        schedule.every().day.at("{:02d}:19".format(i)).do(main)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
