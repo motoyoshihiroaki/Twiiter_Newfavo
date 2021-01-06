@@ -16,3 +16,6 @@ ACCESS_TOKEN_SECRET = os.environ.get("ACCESS_TOKEN_SECRET")
 # Slack
 WEB_HOOK_URL = os.environ.get("WEB_HOOK_URL")
 SLACK_OPERATION_REPORT = os.environ.get("SLACK_OPERATION_REPORT")
+
+# 検索ワード
+SEARCH_LIST = ['IT', 'ブログ書', 'AI','初心者', '読書']
